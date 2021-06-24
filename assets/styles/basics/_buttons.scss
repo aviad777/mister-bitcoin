@@ -1,0 +1,29 @@
+
+.primary-btn{
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 1px solid $clr2;
+    transition: color .3s ease-in-out,background-color .3s ease-in-out;
+
+    &:hover{
+        background-color: $clr2;
+        color: $clr1;
+    }
+}
+
+.nav-btn{
+    cursor: pointer;
+    font-family: Roboto-Black;
+    color: $clr3;
+    font-size: rem(16px);
+    padding: 5px 10px;
+    background-color: transparent;
+    transition: 0.3s;
+
+    &:hover{
+        color: lighten($color:  $clr1, $amount: 10)
+    }
+
+}
