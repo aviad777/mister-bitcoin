@@ -1,0 +1,8 @@
+<div class="contact-list flex column justify-center align-center">
+    <h1>Contacts</h1>
+    <contact-preview *ngFor="let contact of contacts;let indx = index; trackBy: trackByFn" [contact]="contact">
+    </contact-preview>
+</div>
+
+
+<!-- [selectedContactId]="selectedContactId" -->

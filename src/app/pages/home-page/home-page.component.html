@@ -1,0 +1,16 @@
+<div class="home-page flex row">
+    <section class="user-data-container">
+        <h1>Hello {{user.name}} </h1>
+        <div class="preview flex">
+            <img src="../../../assets/img/coin.svg" alt="">
+            <h3>Coins: {{user.coins}}</h3>
+        </div>
+        <div class="preview flex">
+            <img src="../../../assets/img/bitcoin-btc-logo.svg" alt="">
+            <h3>BTC: {{ bitcoinVal$ | async}}</h3>
+        </div>
+
+
+    </section>
+    <line-chart></line-chart>
+</div>

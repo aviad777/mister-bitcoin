@@ -1,0 +1,18 @@
+<section *ngIf="contact" class="contact-details flex column justify-center align-center">
+    <img src="https://robohash.org/set_set5/${{contact._id}}?size=200x200" alt="">
+    <div class="contact-info">
+        <p><span>Name</span>: {{contact.name}}</p>
+        <p><span>Age</span>: {{contact.email}}</p>
+        <p><span>Phone</span>: {{contact.phone}}</p>
+    </div>
+    <button (click)="editContact()">Edit contact </button>
+    <button (click)="onDelete()">Remove Contact</button>
+    <button class="primary-btn" (click)="onBack()">Back to contacts</button>
+</section>
+<section>
+    <a [routerLink]="['/contact',contact._id,'edit']">Edit Contact</a>
+    <router-outlet></router-outlet>
+</section>
+
+<transfer-funds [props]="myProps"></transfer-funds>
+<moves-list [moves]="moves"></moves-list>

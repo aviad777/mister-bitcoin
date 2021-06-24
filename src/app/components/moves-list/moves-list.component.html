@@ -1,0 +1,5 @@
+<div class="moves-list flex column justify-center align-center">
+    <h1>Moves</h1>
+    <move-preview *ngFor="let move of moves;let indx = index; trackBy: trackByFn" [move]="move">
+    </move-preview>
+</div>

@@ -1,0 +1,9 @@
+<section class="contact-page">
+    <h1>contact page</h1>
+    <a routerLink="edit">Add Contact</a>
+    <router-outlet></router-outlet>
+    <br>
+    <contact-filter [filterBy]="filterBy" (onFilter)="onSetFilter($event)"></contact-filter>
+    <contact-list [contacts]="contacts$ | async"></contact-list>
+
+</section>

@@ -1,0 +1,10 @@
+<h2>Please enter info</h2>
+<form class="contact-edit" (ngSubmit)="onSaveContact()">
+    <label for="name">Name</label>
+    <input id="name" type="text" [(ngModel)]="contact.name" name="name">
+    <label for="email">Email</label>
+    <input id="email" type="email" [(ngModel)]="contact.email" name="email">
+    <label for="phone">Phone</label>
+    <input id="phone" type="text" [(ngModel)]="contact.phone" name="phone">
+    <button>Save</button>
+</form>

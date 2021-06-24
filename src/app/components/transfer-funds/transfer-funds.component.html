@@ -1,0 +1,6 @@
+<h1>Transfer:</h1>
+<form #form="ngForm" (ngSubmit)="onSaveForm(form)">
+    <input type="number" min="1" max="100" ngModel placeholder="enter amount:" name="" name="amount">
+    <div>{{ form.value|json }}</div>
+    <button>submit</button>
+</form>

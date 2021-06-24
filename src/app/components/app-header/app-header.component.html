@@ -1,0 +1,22 @@
+<header class="app-header flex row justify-space-between">
+    <div class="logo flex align-center">
+        <img src="../../../assets/img/bitcoin-btc-logo.svg" alt="logo">
+        <h1>Mr.Bitcoin</h1>
+    </div>
+    <nav class="main-nav flex align-center">
+        <ul class="clean-list">
+
+            <li>
+                <!-- routerlink is an angular word that sends the routes to the route model -->
+                <!-- router link active puts an active class on the link that is active -->
+                <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+            </li>
+            <li>
+                <a routerLink="/contacts" routerLinkActive="active">Contacts</a>
+            </li>
+            <li>
+                <a routerLink="/signup" routerLinkActive="active">Signup</a>
+            </li>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,29 @@
+.app-header {
+    .logo {
+        padding-top: 2rem;
+        padding-left: 20px;
+        gap: 30px;
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    .main-nav {
+        width: 40vw;
+        ul {
+            display: flex;
+
+            gap: 70px;
+            font-size: 2rem;
+            font-weight: bolder;
+            a {
+                color: rgb(109, 24, 219);
+            }
+            .active {
+                font-weight: bold;
+                color: rgb(130, 228, 130);
+            }
+        }
+    }
+}
